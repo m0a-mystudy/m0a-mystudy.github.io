@@ -1,7 +1,5 @@
 {
-  "main.css": "static/css/main.29266132.css",
-  "main.css.map": "static/css/main.29266132.css.map",
-  "main.js": "static/js/main.60e3476d.js",
-  "main.js.map": "static/js/main.60e3476d.js.map",
-  "static/media/logo.svg": "static/media/logo.5d5d9eef.svg"
+  "docs.js": "static/js/docs.e30cb7a9.js",
+  "index.js": "static/js/index.2623cb3e.js",
+  "static/media/logo.svg": "static/media/logo.a7cb4618.svg"
 }
