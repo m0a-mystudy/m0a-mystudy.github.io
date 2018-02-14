@@ -1,1 +1,61 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"><script defer="defer" src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.png"><link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/dpkknbmnepmagbdhookiclcaegodhbkh"><title>Taiyaq</title></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="/static/js/index.652a4519.js"></script></body></html>
+<!doctype html>
+<meta charset="utf-8">
+
+<style>
+  pre {
+    width: 600px;
+    white-space: pre-wrap;
+  }
+</style>
+<div></div>
+<script>
+  function add(title, contents) {
+    var h1 = document.createElement("h1")
+    h1.innerHTML = title
+
+    var pre = document.createElement("pre")
+    pre.innerHTML = JSON.stringify(contents, null, "  ")
+
+    var hr = document.createElement("hr")
+
+    document.body.appendChild(h1)
+    document.body.appendChild(pre)
+    document.body.appendChild(hr)
+
+  }
+
+  var obj = {}
+  var navigator_keys = [
+    "appCodeName",
+    "appName",
+    "appVersion",
+    "cookieEnabled",
+    "credentials",
+    "doNotTrack",
+    "geolocation",
+    "hardwareConcurrency",
+    "language",
+    "languages",
+    "maxTouchPoints",
+    "mediaDevices",
+    "mimeTypes",
+    "onLine",
+    "permissions",
+    "platform",
+    "plugins",
+    "presentation",
+    "product",
+    "productSub",
+    "serviceWorker",
+    "storage",
+    "userAgent",
+    "vendor",
+    "vendorSub",
+  ]
+  navigator_keys.forEach(function (e) {
+    obj[e] = navigator[e]
+  })
+
+  add("navigator", obj)
+
+</script>
